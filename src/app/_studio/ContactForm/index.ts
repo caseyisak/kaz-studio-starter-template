@@ -1,15 +1,14 @@
 import {
   CONTENTFUL_COMPONENTS,
-  // CONTENTFUL_COMPONENT_CATEGORY,
   ComponentDefinition,
 } from "@contentful/experiences-sdk-react";
 import StudioConfig from "../../../../studio.config";
 
-export * from "./SiteButtonComponent";
+export * from "./ContactFormComponent";
 
-export const SiteButtonDefinition: ComponentDefinition = {
-  id: CONTENTFUL_COMPONENTS.button.id,
-  name: CONTENTFUL_COMPONENTS.button.name,
+export const ContactFormDefinition: ComponentDefinition = {
+  id: "contact-form",
+  name: "Contact Form",
   category: "Contentful",
   builtInStyles: [
     "cfMargin",
@@ -52,22 +51,6 @@ export const SiteButtonDefinition: ComponentDefinition = {
       displayName: "Background color",
       defaultValue: StudioConfig.colors.primary["400"],
       group: "style",
-      validations: {
-        in: [
-          {
-            value: StudioConfig.colors.primary["100"],
-            displayName: "Light",
-          },
-          {
-            value: StudioConfig.colors.primary["100"],
-            displayName: "Light",
-          },
-          {
-            value: StudioConfig.colors.primary["900"],
-            displayName: "Dark",
-          },
-        ],
-      },
     },
     cfFlexDirection: {
       type: "Text",
