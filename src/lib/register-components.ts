@@ -12,6 +12,15 @@ import {
   ContactFormComponent,
   ContactFormDefinition,
 } from "@/app/_studio/ContactForm";
+// import {
+//   ProductFilterComponent,
+//   ProductFilterDefinition,
+// } from "@/app/_studio/ProductFilter";
+// import  from "@/app/_studio/ButtonAnimation";
+import {
+  ButtonAnimationDefinition,
+  ButtonAnimationComponent,
+} from "@/app/_studio/ButtonAnimation";
 
 defineComponents([
   {
@@ -28,6 +37,17 @@ defineComponents([
   {
     component: ContactFormComponent,
     definition: ContactFormDefinition,
+  },
+  // {
+  //   component: ProductFilterComponent,
+  //   definition: ProductFilterDefinition,
+  // },
+  {
+    component: ButtonAnimationComponent,
+    definition: ButtonAnimationDefinition,
+    options: {
+      wrapComponent: false,
+    },
   },
 ]);
 
