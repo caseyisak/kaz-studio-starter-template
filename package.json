@@ -18,6 +18,7 @@
     "contentful": "^10.6.22",
     "contentful-import": "^9.4.42",
     "contentful-management": "^11.19.1",
+    "css-loader": "^7.1.2",
     "inquirer": "^9.2.15",
     "next": "14.1.0",
     "next-intl": "^3.9.1",
@@ -25,6 +26,7 @@
     "prompts": "^2.4.2",
     "react": "^18",
     "react-dom": "^18",
+    "style-loader": "^4.0.0",
     "swr": "^2.2.5",
     "tailwindcss-animated": "^1.1.2"
   },
